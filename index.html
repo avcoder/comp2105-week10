@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
+    <title>WebSlides: Making HTML presentations easy</title>
+    <meta
+      name="description"
+      content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features."
+    />
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+
+    <!-- CSS WebSlides -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="././static/css/webslides.css"
+    />
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="./static/css/svg-icons.css"
+    />
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/" />
+    <!-- YOUR URL -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="WebSlides — Making HTML Presentations Easy"
+    />
+    <!-- EDIT -->
+    <meta
+      property="og:description"
+      content="WebSlides is about telling stories beautifully. Just the essential features. Good karma."
+    />
+    <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:20:50" />
+    <!-- EDIT -->
+    <meta property="og:image" content="./static/images/share-webslides.jpg" />
+    <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webslides" />
+    <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez" />
+    <!-- EDIT -->
+    <meta
+      name="twitter:title"
+      content="WebSlides — Making HTML Presentations Easy"
+    />
+    <!-- EDIT -->
+    <meta
+      name="twitter:description"
+      content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use."
+    />
+    <!-- EDIT -->
+    <meta name="twitter:image" content="./static/images/share-webslides.jpg" />
+    <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link
+      rel="shortcut icon"
+      sizes="16x16"
+      href="./static/images/favicons/favicon.png"
+    />
+    <link
+      rel="shortcut icon"
+      sizes="32x32"
+      href="./static/images/favicons/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="76x76"
+      href="./static/images/favicons/favicon-76.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="120x120"
+      href="./static/images/favicons/favicon-120.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="152x152"
+      href="./static/images/favicons/favicon-152.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="180x180"
+      href="./static/images/favicons/favicon-180.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="192x192"
+      href="./static/images/favicons/favicon-192.png"
+    />
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#333333" />
+    <style>
+      input[type="range"] {
+        -webkit-appearance: none;
+        background: #333;
+        border: none;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 16px;
+        width: 120px;
+        background: lime;
+        margin-top: -4px;
+      }
+
+      input[type="range"]::-moz-range-thumb {
+        border: none;
+        height: 16px;
+        width: 120px;
+        background: lime;
+        margin-top: -4px;
+        border-radius: 0;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  </head>
+
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo">
+          <a href="index.html" title="WebSlides">WebSlides</a>
+        </p>
+        <ul>
+          <li class="github">
+            <a
+              rel="external"
+              href="https://github.com/avcoder/comp2105-week10"
+              title="Github"
+            >
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          <li class="twitter">
+            <a
+              rel="external"
+              href="https://twitter.com/webslides"
+              title="Twitter"
+            >
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@WebSlides</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides" class="horizontal">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+          <!-- Credit: image from unsplash.com -->
+          <span
+            class="background"
+            style="background-image:url('./static/images/animationmap2.jpg'); filter: opacity(.3);"
+          ></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1>
+              <strong>Greensock Part 3</strong>
+            </h1>
+            <p class="text-intro">Week 10 <br />COMP 2105</p>
+            <p>
+              <a
+                href="https://github.com/avcoder/comp2105-week10"
+                class="button zoomIn"
+                title="Download WebSlides for free"
+              >
+                <svg class="fa-github">
+                  <use xlink:href="#fa-github"></use>
+                </svg>
+                Class Notes
+              </a>
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <img
+              src="./static/images/animationmap.jpg"
+              alt="The world of web animation by Val head"
+              style="width: 80%"
+            />
+            <p>
+              <a
+                href="https://noti.st/valhead/L9LBoQ/choose-your-web-animation-adventure"
+                >https://noti.st/valhead/L9LBoQ/choose-your-web-animation-adventure</a
+              >
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 aligncenter">
+            <h2>
+              <strong>To Do Today:</strong>
+            </h2>
+            <br />
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2>Animation along a path</h2>
+                  <p>Make elements move along a predefined track</p>
+                </li>
+                <li>
+                  <h2>GSAP Licensing</h2>
+                  <p>Learn GSAP's licensing model</p>
+                </li>
+                <li>
+                  <h2>
+                    Draggable, SplitText, DrawSVG.
+                  </h2>
+                  <p>Learn more of GSAP's powerful plugins</p>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p
+                  data-height="500"
+                  data-theme-id="0"
+                  data-slug-hash="OPqpRJ"
+                  data-default-tab="result"
+                  data-user="GreenSock"
+                  data-embed-version="2"
+                  data-pen-title="Try Club GreenSock Bonus Plugins FREE on Codepen"
+                  class="codepen"
+                >
+                  See the Pen
+                  <a href="https://codepen.io/GreenSock/pen/OPqpRJ/"
+                    >Try Club GreenSock Bonus Plugins FREE on Codepen</a
+                  >
+                  by GreenSock (
+                  <a href="https://codepen.io/GreenSock">@GreenSock</a>) on
+                  <a href="https://codepen.io">CodePen</a>.
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h4>
+                  Main Principle: Design everything first, unveil slowly.
+                </h4>
+                <p>
+                  Did you know? - Greensock's plugins are FREE within codepen
+                </p>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 aligncenter">
+            <h2>In-class Exercise 9: steps 1 thru 4</h2>
+            <br />
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2>
+                    Create a new codepen
+                  </h2>
+                  <p class="text-intro">
+                    Include both Greensock library and morphSVG plugin
+                  </p>
+                </li>
+                <li>
+                  <h2>Grab 2 svg icons</h2>
+                  <p class="text-intro">
+                    Get the svg code for
+                    <a
+                      href="https://github.com/edent/SuperTinyIcons/tree/master/images/svg"
+                      >amazon.svg</a
+                    >, click "Raw", then copy/paste the svg code into codepen.
+                    Do the same for apple.svg
+                  </p>
+                </li>
+                <li>
+                  <h2>Make an id name for each <code>&lt;path&gt;</code></h2>
+                  <p class="text-intro">
+                    For example:
+                    <code>&lt;path id="amazon" ...</code>
+                  </p>
+                </li>
+                <li>
+                  <h2>Write the code</h2>
+                  <p class="text-intro">
+                    <code
+                      >TweenMax.to("#amazon", 1, { morphSVG: "#apple"})</code
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-secondary">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 frame">
+            <h2 class="text-serif aligncenter">
+              Submit Inline Exercise 9 + Break
+              <br />
+              (5 mins) + (20mins)
+            </h2>
+            <p class="aligncenter">
+              <a href="http://avillaruz.computerstudi.es/comp2105/index.html"
+                >Start timer</a
+              >
+            </p>
+            <p class="text-symbols">* * *</p>
+            <h4>More Stuff</h4>
+
+            <ul>
+              <li>
+                <a
+                  href="https://medium.freecodecamp.org/how-to-interview-your-interviewers-when-youre-looking-for-a-job-d848bc3a910"
+                  >How to interview your interviewers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://tympanus.net/codrops/2019/01/30/buildings-wave-animation-with-three-js/"
+                  >Wave animation with three.js</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/wesbos/status/1090624545990590465"
+                  >Accessing sibling JS default function params</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p
+                  data-height="500"
+                  data-theme-id="0"
+                  data-slug-hash="mvhak"
+                  data-default-tab="result"
+                  data-user="GreenSock"
+                  data-embed-version="2"
+                  data-pen-title="SplitText: Character Animation with StaggerFrom"
+                  data-preview="true"
+                  class="codepen"
+                >
+                  See the Pen
+                  <a href="https://codepen.io/GreenSock/pen/mvhak/"
+                    >SplitText: Character Animation with StaggerFrom</a
+                  >
+                  by GreenSock (
+                  <a href="https://codepen.io/GreenSock">@GreenSock</a>) on
+                  <a href="https://codepen.io">CodePen</a>.
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h3>
+                  Greensock's splitText plugin
+                </h3>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p
+                  data-height="500"
+                  data-theme-id="0"
+                  data-slug-hash="QmQwYY"
+                  data-default-tab="result"
+                  data-user="avcoder"
+                  data-embed-version="2"
+                  data-pen-title="tabs.zip w gsap splittext"
+                  data-preview="true"
+                  class="codepen"
+                >
+                  See the Pen
+                  <a href="https://codepen.io/avcoder/pen/QmQwYY/"
+                    >tabs.zip w gsap splittext</a
+                  >
+                  by A.V. ( <a href="https://codepen.io/avcoder">@avcoder</a>)
+                  on <a href="https://codepen.io">CodePen</a>.
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h3>
+                  Tabs using Greensock's splitText
+                </h3>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p
+                  data-height="500"
+                  data-theme-id="0"
+                  data-slug-hash="jEEoyw"
+                  data-default-tab="result"
+                  data-user="GreenSock"
+                  data-embed-version="2"
+                  data-pen-title="DrawSVGPlugin Animation"
+                  data-preview="true"
+                  class="codepen"
+                >
+                  See the Pen
+                  <a href="https://codepen.io/GreenSock/pen/jEEoyw/"
+                    >DrawSVGPlugin Animation</a
+                  >
+                  by GreenSock (
+                  <a href="https://codepen.io/GreenSock">@GreenSock</a>) on
+                  <a href="https://codepen.io">CodePen</a>.
+                </p>
+                <script
+                  async
+                  src="https://static.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h3>
+                  Greensock's drawSVG plugin
+                </h3>
+                <p class="text-intro">
+                  DrawSVGPlugin allows you to progressively reveal (or hide) the
+                  stroke of an SVG &lt;path&gt; and you can even animate outward
+                  from the center of the stroke (or any position/segment). It
+                  does this by controlling the stroke-dashoffset and
+                  stroke-dasharray CSS properties.
+                </p>
+                <p>
+                  <a href="https://greensock.com/docs/Plugins/DrawSVGPlugin"
+                    >https://greensock.com/docs/Plugins/DrawSVGPlugin</a
+                  >
+                </p>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <img src="./static/images/xbox.gif" alt="xbox svg animation" />
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h3>
+                  Recreate this xbox using drawSVG
+                </h3>
+                <ul class="flexblock reasons">
+                  <li>
+                    <p class="text-intro">
+                      <a href="https://codepen.io/avcoder/pen/jzRvaG"
+                        >Fork my codepen</a
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text-intro">
+                      <a href="https://www.polygon.com/a/xbox-one-review"
+                        >Get svg from here</a
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text-intro">
+                      <a href="https://codepen.io/GreenSock/pen/OPqpRJ"
+                        >Get drawSVG plugin</a
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <div style="background: #333; padding: 33px">
+                  <div
+                    id="green6"
+                    style="height: 100px; width: 100px; background: green; margin: 10px;"
+                  ></div>
+                  <div
+                    id="blue6"
+                    style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"
+                  ></div>
+                  <div
+                    id="orange6"
+                    style="height: 100px; width: 100px; background: orange;  margin: 10px;"
+                  >
+                    <strong>myLabel</strong>
+                  </div>
+                </div>
+                <button id="go6">Run</button>
+                <script>
+                  $(document).ready(function() {
+                    const tl6 = new TimelineMax();
+                    tl6
+                      .to("#green6", 3, { x: 600 })
+                      .to("#blue6", 3, { x: 600 })
+                      .to("#orange6", 3, { x: 600 }, "goHere");
+
+                    $("#go6").click(function() {
+                      tl6.seek("goHere");
+                    });
+                  });
+                </script>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h3>
+                  Use
+                  <code>seek</code> to jump to a specific time (or label)
+                  without affecting whether or not the instance is paused or
+                  reversed.
+                </h3>
+                <pre><code><h5>
+    //jumps to exactly 2 seconds
+    myAnimation.seek(2);
+    
+    //jumps to exactly 2 seconds but doesn't suppress events during the initial move:
+    myAnimation.seek(2, false);
+     
+    //jumps to the "myLabel" label
+    tl6.seek("myLabel");
+        </h5></code></pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <h2 class="aligncenter">GSAP's Core Strengths</h2>
+          <br />
+          <div class="grid vertical-align">
+            <div class="bg-blue shadow column">
+              <ul class="flexblock activity">
+                <li>
+                  <p class="text-intro">
+                    GSAP "just works" everywhere
+                  </p>
+                </li>
+
+                <li>
+                  <p class="text-intro">
+                    Excels at complex story-telling animations
+                  </p>
+                </li>
+                <li>
+                  <p class="text-intro">
+                    Solves real-world problems (workflow, prefixing, SVG)
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+            <div class="bg-blue shadow column">
+              <ul class="flexblock activity">
+                <li>
+                  <p class="text-intro">
+                    No dependencies. It can work with libraries like jQuery, but
+                    it's not needed
+                  </p>
+                </li>
+                <li>
+                  <p class="text-intro">Funded (not a side project or hobby)</p>
+                </li>
+                <li>
+                  <p class="text-intro">Good docs and support</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-apple">
+          <!--.wrap = container (width: 90%) -->
+          <h2 class="aligncenter">GSAP's Licensing</h2>
+          <br />
+          <div class="grid vertical-align">
+            <div class="bg-purple shadow column">
+              <ul class="flexblock activity">
+                <li>
+                  <p class="text-intro">
+                    Core tools are free, unless you charge people to access your
+                    site, app, etc. Then you need a Club GreenSock membership
+                  </p>
+                </li>
+
+                <li>
+                  <p class="text-intro">
+                    If you purchase a Club GreenSock membership you get bonus
+                    tools such as splitText, DrawSVG, MorphSVG
+                  </p>
+                </li>
+                <li>
+                  <p class="text-intro">
+                    <a href="https://greensock.com/club"
+                      >https://greensock.com/club</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-secondary">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 frame">
+            <h2 class="text-serif aligncenter">
+              Do Lab 9
+              <br />until end of class
+            </h2>
+            <p class="aligncenter">
+              <a href="http://avillaruz.computerstudi.es/comp2105/index.html"
+                >Start timer</a
+              >
+            </p>
+            <p class="text-symbols">* * *</p>
+            <h4>More Stuff</h4>
+
+            <ul>
+              <li>
+                <a href="https://devfreebooks.github.io/"
+                  >Free coding/webdev books</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9"
+                  >Proper use of animation</a
+                >
+              </li>
+              <li>
+                <a href="https://valhead.com/ui-animation/"
+                  >Val Head's list of animation resources</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <!-- .wrap = container (width: 90%) -->
+          <div class=" wrap ">
+            <h2 class="alignleft ">
+              <strong>References</strong>
+            </h2>
+          </div>
+          <ol>
+            <li>Advanced SVG Animation with Sarah Drasner http://lynda.com</li>
+            <li>
+              Creating an HTML5 Banner ad with Greensock (GSAP) with Chris
+              Converse
+            </li>
+            <li>https://greensock.com/position-parameter</li>
+            <li>
+              https://www.youtube.com/watch?v=v9GK4Rf6w3A - Intro to HTML5
+              Animation with Greensock Tutorial
+            </li>
+            <li>https://css-tricks.com/scale-svg/</li>
+            <li>http://jonibologna.com/svg-viewbox-and-viewport/</li>
+            <li>
+              https://github.com/edent/SuperTinyIcons/tree/master/images/svg
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+
+          <!-- .end .wrap -->
+        </section>
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
+
+    <!-- A global footer
+
+     <footer role="contentinfo ">
+      <div class="wrap ">
+        <p>An <a href="https://github.com/webslides/webslides ">open source solution</a>, by <a href="https://twitter.com/webslides ">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="././static/js/webslides.js "></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="././static/js/svg-icons.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  </body>
+</html>
