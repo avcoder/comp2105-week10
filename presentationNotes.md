@@ -56,6 +56,7 @@ TweenMax.staggerFrom(
 
 ```js
 const wheel = document.querySelector("#wheel");
+TweenMax.set(wheel, { transformOrigin: "50% 50%" });
 
 Draggable.create(wheel, {
   type: "rotation",
@@ -69,3 +70,7 @@ Draggable.create(wheel, {
   }
 });
 ```
+
+# animation along path codepen lab
+
+-
