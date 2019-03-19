@@ -572,7 +572,7 @@
               <!-- .end .column -->
               <div class="column">
                 <h3>
-                  Create  Draggable for your Lab8 animation
+                  Create Draggable for your Lab8 animation
                 </h3>
                 <h4>--Part 3 of 3 for in-class exercise 10</h4>
                 <ul class="flexblock reasons">
@@ -620,86 +620,23 @@
 
             <ul>
               <li>
-                <a
-                  href="https://twitter.com/css/status/1107650020919205889"
+                <a href="https://twitter.com/css/status/1107650020919205889"
                   >Airtable</a
                 >
               </li>
               <li>
-                <a
-                  href="https://twitter.com/css/status/1074723409970507776"
+                <a href="https://twitter.com/css/status/1074723409970507776"
                   >Remove image background</a
                 >
               </li>
               <li>
-                <a href="https://twitter.com/SaraSoueidan/status/1085137305214611456"
+                <a
+                  href="https://twitter.com/SaraSoueidan/status/1085137305214611456"
                   >SVG filters</a
                 >
               </li>
             </ul>
           </div>
-        </section>
-
-        <section>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="grid vertical-align">
-              <div class="column">
-                <div style="background: #333; padding: 33px">
-                  <div
-                    id="green6"
-                    style="height: 100px; width: 100px; background: green; margin: 10px;"
-                  ></div>
-                  <div
-                    id="blue6"
-                    style="height: 100px; width: 100px; background: lightblue;  margin: 10px;"
-                  ></div>
-                  <div
-                    id="orange6"
-                    style="height: 100px; width: 100px; background: orange;  margin: 10px;"
-                  >
-                    <strong>myLabel</strong>
-                  </div>
-                </div>
-                <button id="go6">Run</button>
-                <script>
-                  $(document).ready(function() {
-                    const tl6 = new TimelineMax();
-                    tl6
-                      .to("#green6", 3, { x: 600 })
-                      .to("#blue6", 3, { x: 600 })
-                      .to("#orange6", 3, { x: 600 }, "goHere");
-
-                    $("#go6").click(function() {
-                      tl6.seek("goHere");
-                    });
-                  });
-                </script>
-              </div>
-              <!-- .end .column -->
-              <div class="column">
-                <h3>
-                  Use
-                  <code>seek</code> to jump to a specific time (or label)
-                  without affecting whether or not the instance is paused or
-                  reversed.
-                </h3>
-                <pre><code><h5>
-    //jumps to exactly 2 seconds
-    myAnimation.seek(2);
-    
-    //jumps to exactly 2 seconds but doesn't suppress events during the initial move:
-    myAnimation.seek(2, false);
-     
-    //jumps to the "myLabel" label
-    tl6.seek("myLabel");
-        </h5></code></pre>
-              </div>
-              <!-- .end .column -->
-            </div>
-            <!-- .end .grid -->
-          </div>
-          <!-- .end .wrap -->
         </section>
 
         <section class="bg-apple">
@@ -782,11 +719,22 @@
           <!-- .end .wrap -->
         </section>
 
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 aligncenter">
+            <h2>Animation along a path</h2>
+            <br />
+            <div class="bg-white shadow"></div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
         <section class="bg-secondary">
           <!--.wrap = container (width: 90%) -->
           <div class="wrap size-50 frame">
             <h2 class="text-serif aligncenter">
-              Do Lab 9
+              Do Lab 10
               <br />until end of class
             </h2>
             <p class="aligncenter">
