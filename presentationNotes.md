@@ -46,3 +46,8 @@ TweenMax.staggerFrom(
   0.03
 );
 ```
+
+# draggable
+
+-read it
+-click on the docs link and play with the checkboxes and the spinner
