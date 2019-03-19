@@ -254,18 +254,18 @@
             <div class="bg-white shadow">
               <ul class="flexblock reasons">
                 <li>
+                  <h2>
+                    DrawSVG, SplitText, Draggable.
+                  </h2>
+                  <p>Learn more of GSAP's powerful plugins</p>
+                </li>
+                <li>
                   <h2>Animation along a path</h2>
                   <p>Make elements move along a predefined track</p>
                 </li>
                 <li>
                   <h2>GSAP Licensing</h2>
                   <p>Learn GSAP's licensing model</p>
-                </li>
-                <li>
-                  <h2>
-                    Draggable, SplitText, DrawSVG.
-                  </h2>
-                  <p>Learn more of GSAP's powerful plugins</p>
                 </li>
               </ul>
             </div>
@@ -282,16 +282,17 @@
                 <p
                   data-height="500"
                   data-theme-id="0"
-                  data-slug-hash="OPqpRJ"
+                  data-slug-hash="jEEoyw"
                   data-default-tab="result"
                   data-user="GreenSock"
                   data-embed-version="2"
-                  data-pen-title="Try Club GreenSock Bonus Plugins FREE on Codepen"
+                  data-pen-title="DrawSVGPlugin Animation"
+                  data-preview="true"
                   class="codepen"
                 >
                   See the Pen
-                  <a href="https://codepen.io/GreenSock/pen/OPqpRJ/"
-                    >Try Club GreenSock Bonus Plugins FREE on Codepen</a
+                  <a href="https://codepen.io/GreenSock/pen/jEEoyw/"
+                    >DrawSVGPlugin Animation</a
                   >
                   by GreenSock (
                   <a href="https://codepen.io/GreenSock">@GreenSock</a>) on
@@ -304,11 +305,20 @@
               </div>
               <!-- .end .column -->
               <div class="column">
-                <h4>
-                  Main Principle: Design everything first, unveil slowly.
-                </h4>
+                <h3>
+                  Greensock's drawSVG plugin
+                </h3>
+                <p class="text-intro">
+                  DrawSVGPlugin allows you to progressively reveal (or hide) the
+                  stroke of an SVG &lt;path&gt; and you can even animate outward
+                  from the center of the stroke (or any position/segment). It
+                  does this by controlling the stroke-dashoffset and
+                  stroke-dasharray CSS properties.
+                </p>
                 <p>
-                  Did you know? - Greensock's plugins are FREE within codepen
+                  <a href="https://greensock.com/docs/Plugins/DrawSVGPlugin"
+                    >https://greensock.com/docs/Plugins/DrawSVGPlugin</a
+                  >
                 </p>
               </div>
               <!-- .end .column -->
@@ -320,48 +330,44 @@
 
         <section class="bg-apple">
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-50 aligncenter">
-            <h2>In-class Exercise 9: steps 1 thru 4</h2>
-            <br />
-            <div class="bg-white shadow">
-              <ul class="flexblock reasons">
-                <li>
-                  <h2>
-                    Create a new codepen
-                  </h2>
-                  <p class="text-intro">
-                    Include both Greensock library and morphSVG plugin
-                  </p>
-                </li>
-                <li>
-                  <h2>Grab 2 svg icons</h2>
-                  <p class="text-intro">
-                    Get the svg code for
-                    <a
-                      href="https://github.com/edent/SuperTinyIcons/tree/master/images/svg"
-                      >amazon.svg</a
-                    >, click "Raw", then copy/paste the svg code into codepen.
-                    Do the same for apple.svg
-                  </p>
-                </li>
-                <li>
-                  <h2>Make an id name for each <code>&lt;path&gt;</code></h2>
-                  <p class="text-intro">
-                    For example:
-                    <code>&lt;path id="amazon" ...</code>
-                  </p>
-                </li>
-                <li>
-                  <h2>Write the code</h2>
-                  <p class="text-intro">
-                    <code
-                      >TweenMax.to("#amazon", 1, { morphSVG: "#apple"})</code
-                    >
-                  </p>
-                </li>
-              </ul>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <img src="./static/images/xbox.gif" alt="xbox svg animation" />
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <h3>
+                  Recreate this xbox using drawSVG
+                </h3>
+                <h4>--Part 1 of 3 for in-class exercise 10</h4>
+                <ul class="flexblock reasons">
+                  <li>
+                    <p class="text-intro">
+                      <a href="https://codepen.io/avcoder/pen/jzRvaG"
+                        >Fork my codepen</a
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text-intro">
+                      <a href="https://www.polygon.com/a/xbox-one-review"
+                        >Get svg from here</a
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text-intro">
+                      <a href="https://codepen.io/GreenSock/pen/OPqpRJ"
+                        >Get drawSVG plugin</a
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- .end .column -->
             </div>
-            <!-- .end .bg-white shadow -->
+            <!-- .end .grid -->
           </div>
           <!-- .end .wrap -->
         </section>
@@ -479,103 +485,6 @@
                 <h3>
                   Tabs using Greensock's splitText
                 </h3>
-              </div>
-              <!-- .end .column -->
-            </div>
-            <!-- .end .grid -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="grid vertical-align">
-              <div class="column">
-                <p
-                  data-height="500"
-                  data-theme-id="0"
-                  data-slug-hash="jEEoyw"
-                  data-default-tab="result"
-                  data-user="GreenSock"
-                  data-embed-version="2"
-                  data-pen-title="DrawSVGPlugin Animation"
-                  data-preview="true"
-                  class="codepen"
-                >
-                  See the Pen
-                  <a href="https://codepen.io/GreenSock/pen/jEEoyw/"
-                    >DrawSVGPlugin Animation</a
-                  >
-                  by GreenSock (
-                  <a href="https://codepen.io/GreenSock">@GreenSock</a>) on
-                  <a href="https://codepen.io">CodePen</a>.
-                </p>
-                <script
-                  async
-                  src="https://static.codepen.io/assets/embed/ei.js"
-                ></script>
-              </div>
-              <!-- .end .column -->
-              <div class="column">
-                <h3>
-                  Greensock's drawSVG plugin
-                </h3>
-                <p class="text-intro">
-                  DrawSVGPlugin allows you to progressively reveal (or hide) the
-                  stroke of an SVG &lt;path&gt; and you can even animate outward
-                  from the center of the stroke (or any position/segment). It
-                  does this by controlling the stroke-dashoffset and
-                  stroke-dasharray CSS properties.
-                </p>
-                <p>
-                  <a href="https://greensock.com/docs/Plugins/DrawSVGPlugin"
-                    >https://greensock.com/docs/Plugins/DrawSVGPlugin</a
-                  >
-                </p>
-              </div>
-              <!-- .end .column -->
-            </div>
-            <!-- .end .grid -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple">
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="grid vertical-align">
-              <div class="column">
-                <img src="./static/images/xbox.gif" alt="xbox svg animation" />
-              </div>
-              <!-- .end .column -->
-              <div class="column">
-                <h3>
-                  Recreate this xbox using drawSVG
-                </h3>
-                <ul class="flexblock reasons">
-                  <li>
-                    <p class="text-intro">
-                      <a href="https://codepen.io/avcoder/pen/jzRvaG"
-                        >Fork my codepen</a
-                      >
-                    </p>
-                  </li>
-                  <li>
-                    <p class="text-intro">
-                      <a href="https://www.polygon.com/a/xbox-one-review"
-                        >Get svg from here</a
-                      >
-                    </p>
-                  </li>
-                  <li>
-                    <p class="text-intro">
-                      <a href="https://codepen.io/GreenSock/pen/OPqpRJ"
-                        >Get drawSVG plugin</a
-                      >
-                    </p>
-                  </li>
-                </ul>
               </div>
               <!-- .end .column -->
             </div>
