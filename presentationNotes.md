@@ -51,3 +51,21 @@ TweenMax.staggerFrom(
 
 -read it
 -click on the docs link and play with the checkboxes and the spinner
+
+# codepen exercise
+
+```js
+const wheel = document.querySelector("#wheel");
+
+Draggable.create(wheel, {
+  type: "rotation",
+  bounds: {
+    minRotation: 0,
+    maxRotation: 360
+  },
+  onDrag: function() {
+    hotairBalloon().progress(this.rotation / 360);
+    hotairBalloon().pause();
+  }
+});
+```
